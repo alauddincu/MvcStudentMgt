@@ -1,0 +1,21 @@
+﻿@model MvcApplication30September.Models.CourseListModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Coure Details</h2>
+
+<table border="1">
+
+    @for (int i = 0; i < Model.CourseListCollection.Count; i++)
+    {
+        <tr>
+            <td>@Model.CourseListCollection[i].CourseId</td>
+            <td>@Model.CourseListCollection[i].CourseName</td>
+            <td>@Model.CourseListCollection[i].CourseMarks</td>
+
+        </tr>
+    }
+
+</table>

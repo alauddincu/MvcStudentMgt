@@ -1,0 +1,110 @@
+﻿@model MvcStudnetMgt6October.Models.CourseListModel
+<!DOCTYPE HTML>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function show1()
+        {
+            //alert("test");
+            var x = document.getElementById("Studentid").value;
+
+            //alert("Added.." + x);
+            document.getElementById("sidata").value = x;
+            return true;
+
+        }
+
+        </script>
+</head>
+<body>
+    
+        <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    
+    @{
+        ViewBag.Title = "To Add Marks:";
+    }
+
+    @using (Html.BeginForm("CalculateMarks", "MarksInput", FormMethod.Post))
+    {
+        <h3>Add Marks StudentWise</h3>
+        string str = "";
+        int n = 0;
+     <div>
+          
+Student ID:
+ <select name="Studentid" id="Studentid">
+             <option value="Select">
+                Select
+            </option>
+    @for (n = 0; n < Model.StudentListCollection.Count; n++)
+    {
+
+        <option value="@Model.StudentListCollection[n].Id.ToString()">
+            @Model.StudentListCollection[n].Id.ToString()
+        </option>
+
+    }
+</select>
+         <input type="hidden" name="sidata" id="sidata" size="100" value="@ViewBag.siddata">
+
+                    <br/>
+            <input type="Submit" name="addmarks" id="addmarks" value="To Add Marks" onclick="return show1();">
+                      
+   </div>
+
+          <div>
+             <span>
+            @ViewBag.Msgss
+             </span>
+         </div>
+
+                string st = ViewBag.Msgss;
+                if (@st == "okk")
+                {
+                    <div>
+                        <table class="table">
+
+                            <tr>
+                                <th>Course Id</th>
+                                <th>Course Name</th>
+                                <th>Enter Marks here...</th>
+
+                            </tr>
+
+                            @for (int i = 0; i < Model.CourseListCollection.Count; i++)
+                            {
+
+
+                                str = str + @Model.CourseListCollection[i].CourseId + ",";
+                                <tr>
+                                    <td>@Model.CourseListCollection[i].CourseId</td>
+                                    <td>@Model.CourseListCollection[i].CourseName</td>
+                                    <td><input type="text" name="c-@Model.CourseListCollection[i].CourseId" id="c-@Model.CourseListCollection[i].CourseId"> </td>
+
+                                </tr>
+                            }
+                            @{ str = str.Substring(0, str.Length - 1);}
+                            <tr>
+
+                                <td>
+                                   
+                                    <input type="submit" name="savemarks" value="::Save Marks::">
+                                    <input type="hidden" name="marksdata" size="100" value="@str">
+                                    
+
+                                </td>
+                            </tr>
+                        </table>
+                        <span>
+                            @ViewBag.msgg
+                        </span>
+                    </div>
+                }
+
+
+    }
+</body>

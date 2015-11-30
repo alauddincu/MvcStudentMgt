@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Login</title>
+</head>
+
+
+<body>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+@using (Html.BeginForm("Login", "LoginDetails", FormMethod.Post))
+{
+    <div>
+
+        <table class="table" border="0">
+
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <td>User Mail:</td>
+                <td><input type="text" name="uname" size="10"></td>
+                @*<td> <input type="submit" name="match1"></td>*@
+            </tr>
+            <tr>
+                <td>User Pass:</td>
+                <td><input type="password" name="pass" size="10"></td>
+                @*<td> <input type="submit" name="match2"></td>*@
+            </tr>
+            <tr>
+                <td>User Type:</td>
+                <td><input type="text" name="utype" size="10"></td>
+            </tr>
+             @*<tr>
+                <td>User Type_DropDown:</td>
+                
+                <td><select name="utype">
+                    <option>a</option>
+                        <option>b</option>
+                        <option>n</option>
+                        <option>c</option>
+                    </select></td>
+               
+            </tr>*@
+            <tr>
+                <td>
+                    <input type="submit" name="signin" value="Sign In">
+
+                </td>
+            </tr>
+        </table>
+        <span>
+            @ViewBag.Msg
+        </span>
+    </div>
+
+}
+    @using (Html.BeginForm("ChangePass", "LoginDetails", FormMethod.Post))
+    {
+        <input type="submit" value="Change Pass">
+    }
+</body>

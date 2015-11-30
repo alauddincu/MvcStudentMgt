@@ -1,0 +1,159 @@
+﻿@model MvcStudnetMgt6October.Models.CourseListModel
+<!DOCTYPE html > 
+
+<head>
+    <title></title>
+    <style type="text/css">
+        #showtable{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
+   
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    @{
+        ViewBag.Title = "Course Details";
+     }
+@using (Html.BeginForm("ShowAll", "CourseDetails", FormMethod.Post))
+    {
+<h1>Coure Details</h1>
+   <div>
+     <span>@ViewBag.Title</span>
+      <table class="table" border="0">
+
+            <tr>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Course Marks</th>
+
+            </tr>
+  @for (int i = 0; i < Model.CourseListCollection.Count; i++)
+{
+    <tr>
+        <td>
+            @Model.CourseListCollection[i].CourseId
+        </td>
+        <td>
+            @Model.CourseListCollection[i].CourseName
+        </td>
+        <td>
+            @Model.CourseListCollection[i].CourseMarks
+        </td>
+        <td> 
+            <input type="button" name="show" id="BT-@Model.CourseListCollection[i].CourseId" value="Modify">
+        </td>
+       
+    </tr>
+        <script type="text/javascript">
+            
+            $(document).ready(function () {
+                $('#BT-@Model.CourseListCollection[i].CourseId').click(function ()
+                {
+                    
+                    $('#cid1').val('@Model.CourseListCollection[i].CourseId');
+                    $('#cname1').val('@Model.CourseListCollection[i].CourseName');
+                    $('#cmarks').val('@Model.CourseListCollection[i].CourseMarks');
+                    $('#showtable').show();
+                }
+                );
+            });
+        </script>
+}
+
+
+</table>
+        <br/><br/>
+        <input type="submit" name="add" value="Add New Record" >
+ 
+</div>
+    
+    <div>        <span>
+                    @ViewBag.Msg2
+                </span>
+                <span>
+                    @ViewBag.Msg1
+                </span>
+    </div>
+        
+        string s = ViewBag.Addmsg;
+        if (@s == "Yes")
+        {
+            <div>
+                <table border="1">
+                    <tr>
+                        <td>Course Id:</td>
+                        <td><input type="text" name="cid1" size="10" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Course Name:</td>
+                        <td><input type="text" name="cname1" size="10" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Course Marks:</td>
+                        <td><input type="text" name="cmarks1" size="10" value="" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="save" value="Save" onclick="show1();">
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            }
+         
+        //string s1 = ViewBag.Addmsg1;
+        //if (@s1 == "ok") { 
+      
+           <div id="showtable">
+       
+                <table>
+                    <tr>
+                        <td>Course Id:</td>
+                        <td>
+                            <input type="text" name="cid1" id="cid1" size="10" value="" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Course Name:</td>
+                        <td><input type="text" name="cname1" id="cname1" size="10" value=""></td>
+
+                    </tr>
+                    <tr>
+                        <td>Course Marks:</td>
+                        <td><input type="text" name="cmarks" id="cmarks" size="10" value=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" name="update" value="Update">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="remove" value="Remove">
+
+                        </td>
+                    </tr>
+
+
+                </table>
+                <span>
+                    @ViewBag.Msg
+                </span>
+
+            </div>
+        
+    
+    }
+</body>

@@ -1,0 +1,36 @@
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.dll.config
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.pdb
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Helpers.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Mvc.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Razor.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Deployment.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Razor.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Razor.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Deployment.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Razor.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Helpers.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Mvc.xml
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.dll
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.pdb
+C:\Users\alauddin dipu\Desktop\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.csprojResolveAssemblyReference.cache
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.dll.config
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\MvcStudnetMgt6October.pdb
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Helpers.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Mvc.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Razor.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Deployment.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Razor.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Razor.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Deployment.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Webpages.Razor.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Helpers.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\bin\System.Web.Mvc.xml
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.csprojResolveAssemblyReference.cache
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.dll
+H:\FTFL3\Track\Projects\MvcStudnetMgt6October\MvcStudnetMgt6October\obj\Debug\MvcStudnetMgt6October.pdb

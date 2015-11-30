@@ -1,0 +1,30 @@
+﻿@model MvcStudnetMgt6October.Models.StudentListModel
+
+@{
+    ViewBag.Title = "Index";
+}
+<body>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+</body>
+<h2>Student Details</h2>
+<table class="table" border="1">
+    @for (int i = 0; i < Model.StdentListCollection.Count; i++)
+    {
+        <tr>
+
+            <td>@Model.StdentListCollection[i].Id</td>
+            <td>@Model.StdentListCollection[i].Name</td>
+            <td>@Model.StdentListCollection[i].Address</td>
+            <td>@Model.StdentListCollection[i].Section</td>
+            <td>@Model.StdentListCollection[i].Marks</td>
+
+        </tr>
+    }
+
+
+
+</table>
+

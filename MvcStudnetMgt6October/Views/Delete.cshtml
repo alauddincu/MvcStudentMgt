@@ -1,0 +1,23 @@
+﻿@using (Html.BeginForm("Delete", "CourseDetails", FormMethod.Post))
+{
+    <div>
+        <table>
+            <tr>
+                <td>Course Id:</td>
+                <td><input type="text" name="cid1" size="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="remove" value="Remove">
+
+                </td>
+            </tr>
+
+
+        </table>
+
+        <span>
+            @ViewBag.Msg
+        </span>
+    </div>
+}

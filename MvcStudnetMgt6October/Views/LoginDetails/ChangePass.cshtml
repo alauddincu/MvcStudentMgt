@@ -1,0 +1,43 @@
+﻿@using (Html.BeginForm("ChangePass", "LoginDetails", FormMethod.Post))
+{
+    <div>
+        <table>
+            <tr>
+                <td>Give User Mail:</td>
+                <td><input type="text" name="umail" size="10"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>Give User Type:</td>
+                <td><input type="text" name="utype" size="10"></td>
+            </tr>
+            <tr>
+<tr>
+                <td>Give Previous Pass:</td>
+                <td><input type="password" name="prepass" size="10"></td>
+             </tr>
+            <tr>
+                <td>Give New Pass 1st time:</td>
+                <td><input type="password" name="newpass1" size="10"></td>
+            </tr>
+            <tr>
+                <td>Give New Pass 2nd time:</td>
+                <td><input type="password" name="newpass2" size="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="changepass" value="Submit to Change Pass">
+
+                </td>
+            </tr>
+
+
+
+            </table>
+        <span>
+
+            @ViewBag.Msg
+        </span>
+
+        </div>
+}

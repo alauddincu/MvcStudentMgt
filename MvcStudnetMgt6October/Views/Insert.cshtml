@@ -1,0 +1,38 @@
+﻿@*@{
+        ViewBag.Title = "Insert";
+    }*@
+
+@*<h2>Insert Course</h2>*@
+@using (Html.BeginForm("Insert", "CourseDetails", FormMethod.Post))
+{
+    <div>
+        <table border="1">
+            <tr>
+                <td>Course Id:</td>
+                <td><input type="text" name="cid1" size="10"></td>
+            </tr>
+            <tr>
+                <td>Course Name:</td>
+                <td><input type="text" name="cname1" size="10"></td>
+            </tr>
+            <tr>
+                <td>Course Marks:</td>
+                <td><input type="text" name="cmarks" size="10"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="save" value="Save">
+
+                </td>
+            </tr>
+
+        </table>
+        <span>
+
+            @ViewBag.Msg
+        </span>
+
+    </div>
+
+}

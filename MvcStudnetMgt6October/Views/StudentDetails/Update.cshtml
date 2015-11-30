@@ -1,0 +1,45 @@
+﻿
+
+@using (Html.BeginForm("Update", "StudentDetails", FormMethod.Post))
+{ <div>
+        <table border="1">
+            <tr>
+                <td>Student Id:</td>
+                <td>
+                    <input type="text" name="id1" size="10" value="@ViewBag.id">
+                    <input type="submit" name="show" value="Show">
+                </td>
+            </tr>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="name1" size="10" value="@ViewBag.name"></td>
+            </tr>
+            <tr>
+                <td>Student Address:</td>
+                <td><input type="text" name="address" size="10" value="@ViewBag.address"></td>
+            </tr>
+            <tr>
+                <td>Student Sectoin:</td>
+                <td><input type="text" name="section" size="10" value="@ViewBag.section"></td>
+            </tr>
+            <tr>
+                <td>Student Marks:</td>
+                <td><input type="text" name="marks" size="10" value="@ViewBag.marks"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" name="update" value="Update">
+
+                </td>
+            </tr>
+        </table>
+        <span>
+            @ViewBag.Msg
+        </span>
+
+
+    </div>
+}
+
+

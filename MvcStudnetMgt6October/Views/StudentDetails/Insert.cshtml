@@ -1,0 +1,42 @@
+﻿
+
+@using (Html.BeginForm("Insert", "StudentDetails", FormMethod.Post))
+{ <div>
+        <table border="1">
+            <tr>
+                <td>Student Id:</td>
+                <td><input type="text" name="id1" size="10"></td>
+            </tr>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="name1" size="10"></td>
+            </tr>
+            <tr>
+                <td>Student Address:</td>
+                <td><input type="text" name="address" size="10"></td>
+            </tr>
+            <tr>
+                <td>Student Sectoin:</td>
+                <td><input type="text" name="section" size="10"></td>
+            </tr>
+            <tr>
+                <td>Student Marks:</td>
+                <td><input type="text" name="marks" size="10"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" name="save" value="Save">
+
+                </td>
+            </tr>
+        </table>
+        <span>
+            @ViewBag.Msg
+        </span>
+
+
+    </div>
+}
+@*</body>
+    </html>*@
